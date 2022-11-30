@@ -1,0 +1,15 @@
+server:
+  port: 8888
+spring:
+  application:
+    name: microservices-bank-config
+  cloud:
+    config:
+      server:
+        git:
+          ignore-local-ssh-settings: true
+          default-label: main
+          uri: https://github.com/jhonl23/microservices-bank-config.git
+          search-paths: config-data
+          username: jhonl
+          password: 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
