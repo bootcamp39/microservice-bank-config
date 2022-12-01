@@ -10,13 +10,4 @@ spring:
       port: 27017
       uri: mongodb://localhost:27017/BankCreditAccounts
   autoconfigure:
-    exclude: org.springframework.boot.autoconfigure.jdbc.DataSourceAutoConfiguration
-eureka:
-  client:
-    fetch-registry: false
-    register-with-eureka: false
-    instance:
-      instance-id: ${spring.application.name}:${spring.application.instance_id:${random.value}}
-      service-url:
-        defaultZone: http://localhost:8761/eureka
-      
+    exclude: org.springframework.boot.autoconfigure.jdbc.DataSourceAutoConfiguration      
