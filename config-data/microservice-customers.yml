@@ -1,0 +1,13 @@
+server:
+  port: 8081
+spring:
+  application:
+    name: microservice-customers
+  data:
+    mongodb:
+      database: BankCustomers
+      host: localhost
+      port: 27017
+      uri: mongodb://localhost:27017/BankCustomers
+  autoconfigure:
+    exclude: org.springframework.boot.autoconfigure.jdbc.DataSourceAutoConfiguration
