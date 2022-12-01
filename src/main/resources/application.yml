@@ -9,7 +9,7 @@ spring:
         git:
           ignore-local-ssh-settings: true
           default-label: main
-          uri: https://github.com/jhonl23/microservices-bank-config.git
+          uri: https://github.com/csanmont/microservices-bank-config.git
           search-paths: config-data
-          username: jhonl
-          password: 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
+          username: csanmont
+          password: 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
