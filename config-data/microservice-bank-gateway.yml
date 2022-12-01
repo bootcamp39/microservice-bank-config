@@ -1,0 +1,28 @@
+server:
+  port: 8090
+  
+spring:
+  application:
+    name: microservice-bank-gateway
+  cloud:
+    gateway:
+      routes[0]:
+        id: microservice-credit-accounts
+        predicates: Path=/api/credit/accounts/**
+        filters: StripPrefix=3
+        uri: lb://microservice-credit-accounts
+      discovery:
+        locator:
+          enabled: true
+    loadbalancer:
+      ribbon:
+        enabled: false
+        
+eureka:
+  instance:
+    hostname: localhost
+  client:
+    fetch-registry: false
+    register-with-eureka: false
+  service-url: 
+    default-zone: http://${eureka.instance.hostname}:${server.port}/eureka    
