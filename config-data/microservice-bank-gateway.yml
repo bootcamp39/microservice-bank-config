@@ -16,10 +16,9 @@ spring:
     gateway:
       routes:
         - id: microservice-passive-accounts
-          uri: lb://microservice-passive-accounts
+          uri: http://localhost:8082
           predicates: 
           - Path=/passive-accounts/**
-          filters: StripPrefix=1
       discovery:
         locator:
           enabled: true
