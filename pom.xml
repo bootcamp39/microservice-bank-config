@@ -9,12 +9,12 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>com.nttdata</groupId>
-	<artifactId>microservices-bank-config</artifactId>
+	<artifactId>microservice-bank-config</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>microservices-bank-config</name>
+	<name>microservice-bank-config</name>
 	<description>Config Server</description>
 	<properties>
-		<java.version>8</java.version>
+		<java.version>11</java.version>
 		<spring-cloud.version>2021.0.5</spring-cloud.version>
 	</properties>
 	<dependencies>
