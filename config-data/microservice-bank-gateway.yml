@@ -19,6 +19,7 @@ spring:
           uri: lb://microservice-passive-accounts
           predicates: 
           - Path=/passive-accounts/**
+          filters: StripPrefix=1
       discovery:
         locator:
           enabled: true
