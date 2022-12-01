@@ -4,7 +4,7 @@ import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class MicroservicesBankConfigApplicationTests {
+class MicroserviceBankConfigApplicationTests {
 
 	@Test
 	void contextLoads() {
