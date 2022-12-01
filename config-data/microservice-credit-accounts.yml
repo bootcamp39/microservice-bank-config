@@ -1,0 +1,13 @@
+server:
+  port: 8083
+spring:
+  application:
+    name: microservice-bank-credit-accounts
+  data:
+    mongodb:
+      database: BankCreditAccounts
+      host: localhost
+      port: 27017
+      uri: mongodb://localhost:27017/BankCreditAccounts
+  autoconfigure:
+    exclude: org.springframework.boot.autoconfigure.jdbc.DataSourceAutoConfiguration
