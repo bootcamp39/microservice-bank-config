@@ -6,11 +6,12 @@ spring:
     name: microservice-bank-gateway
   cloud:
     gateway:
-      routes[0]:
-        id: microservice-credit-accounts
-        predicates: Path=/api/credit/accounts/**
-        filters: StripPrefix=3
-        uri: lb://microservice-credit-accounts
+      routes:
+        - id: microservice-credit-accounts
+          uri: http://localhost:8083
+          predicates: 
+          - Path=/api/credit/accounts/**
+          
       discovery:
         locator:
           enabled: true
