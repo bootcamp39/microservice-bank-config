@@ -15,16 +15,8 @@ spring:
   cloud:
     gateway:
       routes:
-        - id: microservice-credit-accounts
-          uri: http://localhost:8083
+        - id: microservice-passive-accounts
+          uri: http://localhost:8082
           predicates: 
-          - Path=/api/credit/accounts/**
-          
-      discovery:
-        locator:
-          enabled: true
-    loadbalancer:
-      ribbon:
-        enabled: false
-        
-    
+          - Path=/passive-accounts/**
+ 
