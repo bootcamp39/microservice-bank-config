@@ -7,7 +7,7 @@ eureka:
     serviceUrl: 
       defaultZone: http://bank-discovery:8761/eureka
   instance:
-    #prefer-ip-address: true
+    prefer-ip-address: true
     #hostname: bank-discovery
     instance-id: ${spring.application.name}:${spring.application.instance_id:${random.value}}
 
