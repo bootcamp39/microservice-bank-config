@@ -5,8 +5,8 @@ spring:
     name: microservice-bank-discovery
 eureka:
   instance:
-    #prefer-ip-address: true
-    hostname: bank-discovery
+    prefer-ip-address: true
+    #hostname: bank-discovery
   client:
     fetch-registry: false
     register-with-eureka: false
