@@ -4,13 +4,13 @@ eureka:
   client:
     fetch-registry: true
     register-with-eureka: true
+    serviceUrl: 
+      defaultZone: http://bank-discovery:8761/eureka
   instance:
     #prefer-ip-address: true
     hostname: bank-discovery
     instance-id: ${spring.application.name}:${spring.application.instance_id:${random.value}}
-    serviceUrl: 
-      defaultZone: http://bank-discovery:8761/eureka
-      
+
 spring:
   application:
     name: microservice-bank-gateway
