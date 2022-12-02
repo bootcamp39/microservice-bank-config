@@ -4,6 +4,8 @@ spring:
   application:
     name: microservice-bank-discovery
 eureka:
+  instance:
+    hostname: bank-discovery
   client:
     fetch-registry: false
     register-with-eureka: false
