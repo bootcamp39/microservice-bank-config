@@ -1,22 +1,25 @@
 server:
   port: 8081
 eureka:
+  instance:
+    prefer-ip-address: true
+    hostname: bank-discovery
+    instance-id: ${spring.application.name}:${spring.application.instance_id:${random.value}}
   client:
     fetch-registry: true
     register-with-eureka: true
-  instance:
-    instance-id: ${spring.application.name}:${spring.application.instance_id:${random.value}}
-    service-url: 
-      default-zone: http://localhost:8761/eureka
+    serviceUrl: 
+      defaultZone: http://bank-discovery:8761/eureka  
     
 spring:
   application:
     name: microservice-customers
   data:
     mongodb:
-      database: BankCustomers
-      host: localhost
-      port: 27017
-      uri: mongodb://localhost:27017/BankCustomers
+      #database: BankCustomers
+      #host: localhost
+      #port: 27017
+      #uri: mongodb://localhost:27017/BankCustomers
+      uri: mongodb+srv://csanmont:csanmont@cluster0.bxnzqcx.mongodb.net/BankCustomers?retryWrites=true&w=majority
   autoconfigure:
     exclude: org.springframework.boot.autoconfigure.jdbc.DataSourceAutoConfiguration
