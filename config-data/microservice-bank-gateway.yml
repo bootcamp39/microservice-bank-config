@@ -21,7 +21,15 @@ spring:
         - id: microservice-passive-accounts
           uri: http://passive-accounts:8082
           predicates: 
-          - Path=/passive-accounts/**
+          - Path=/**
+        - id: microservice-passive-accounts
+          uri: http://credit-accounts:8083
+          predicates: 
+          - Path=/**
+        - id: microservice-customers
+          uri: http://credit-accounts:8081
+          predicates: 
+          - Path=/**
       discovery:
         locator:
           enabled: true
