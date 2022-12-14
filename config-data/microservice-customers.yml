@@ -18,8 +18,8 @@ spring:
     mongodb:
       #database: BankCustomers
       #host: localhost
-      #port: 27017
+      port: 27017
       #uri: mongodb://localhost:27017/BankCustomers
-      uri: mongodb+srv://csanmont:csanmont@cluster0.bxnzqcx.mongodb.net/BankCustomers?retryWrites=true&w=majority
+      uri: mongodb+srv://root:admin@bootcamp.6h21lfh.mongodb.net/BankCustomers?retryWrites=true&w=majority
   autoconfigure:
     exclude: org.springframework.boot.autoconfigure.jdbc.DataSourceAutoConfiguration
