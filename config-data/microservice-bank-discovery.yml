@@ -11,4 +11,4 @@ eureka:
     fetch-registry: false
     register-with-eureka: false
     serviceUrl:
-      defaultZone: http://${eureka.instance.hostname}:${server.port}/eureka/
+      defaultZone: http://bank-dicovery.eubgdbdgarc4bme3.eastus.azurecontainer.io:8761/eureka/
