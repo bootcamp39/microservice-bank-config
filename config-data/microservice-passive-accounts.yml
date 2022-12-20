@@ -16,9 +16,6 @@ spring:
     name: microservice-passive-accounts
   data:
     mongodb:
-      #database: BankPassiveAccounts
-      #host: localhost
-      #port: 27017
       uri: mongodb+srv://csanmont:csanmont@cluster0.bxnzqcx.mongodb.net/BankPassiveAccounts?retryWrites=true&w=majority  
   autoconfigure:
     exclude: org.springframework.boot.autoconfigure.jdbc.DataSourceAutoConfiguration
