@@ -27,7 +27,7 @@ spring:
           predicates: 
           - Path=/**
         - id: microservice-customers
-          uri: bank-customers.afckgbbwaxfyacce.eastus.azurecontainer.io:8081
+          uri: http://bank-customers.afckgbbwaxfyacce.eastus.azurecontainer.io:8081
           predicates: 
           - Path=/**
       discovery:
