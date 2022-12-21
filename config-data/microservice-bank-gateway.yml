@@ -22,6 +22,10 @@ spring:
           uri: http://bank-customers.afckgbbwaxfyacce.eastus.azurecontainer.io:8081
           predicates: 
           - Path=/person/**
+        - id: microservice-passive-accounts
+          uri: passive-accounts.gmgkeqdbdmcseec6.eastus2.azurecontainer.io:8082
+          predicates: 
+          - Path=/passive-accounts/**, /movement/**, /debitcard/**
       discovery:
         locator:
           enabled: true
