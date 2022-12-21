@@ -19,3 +19,8 @@ spring:
       uri: mongodb+srv://csanmont:csanmont@cluster0.bxnzqcx.mongodb.net/BankCustomers?retryWrites=true&w=majority
   autoconfigure:
     exclude: org.springframework.boot.autoconfigure.jdbc.DataSourceAutoConfiguration
+  cache:
+    type: redis
+  redis:
+    host: localhost
+    port: 6379
