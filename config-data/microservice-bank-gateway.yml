@@ -23,7 +23,7 @@ spring:
           predicates: 
           - Path=/person/**
         - id: microservice-passive-accounts
-          uri: passive-accounts.gmgkeqdbdmcseec6.eastus2.azurecontainer.io:8082
+          uri: http://passive-accounts.gmgkeqdbdmcseec6.eastus2.azurecontainer.io:8082
           predicates: 
           - Path=/passive-accounts/**, /movement/**, /debitcard/**
       discovery:
