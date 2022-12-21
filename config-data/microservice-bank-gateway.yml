@@ -18,14 +18,6 @@ spring:
   cloud:
     gateway:
       routes:
-        - id: microservice-passive-accounts
-          uri: http://passive-accounts:8082
-          predicates: 
-          - Path=/**
-        - id: microservice-passive-accounts
-          uri: http://credit-accounts:8083
-          predicates: 
-          - Path=/**
         - id: microservice-customers
           uri: http://bank-customers.afckgbbwaxfyacce.eastus.azurecontainer.io:8081
           predicates: 
